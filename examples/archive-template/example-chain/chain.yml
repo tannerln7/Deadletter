@@ -1,0 +1,7 @@
+slug: example-chain
+resourceId: 55555555-5555-4555-8555-555555555555
+title: Fictional Example Chain
+description: Copyable sanitized template content with no private records.
+displayOrder: 100
+collection: example-records
+category: correspondence

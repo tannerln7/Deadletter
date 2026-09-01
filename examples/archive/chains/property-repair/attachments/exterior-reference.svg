@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title description">
+  <title id="title">Fictional property outline</title>
+  <desc id="description">A simple sanitized illustration with no script or external resources.</desc>
+  <rect width="640" height="360" fill="#e2e8f0"/>
+  <path d="M130 190 320 70l190 120v120H130Z" fill="#fff" stroke="#475569" stroke-width="12"/>
+  <rect x="275" y="210" width="90" height="100" fill="#cbd5e1"/>
+</svg>

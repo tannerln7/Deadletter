@@ -1,0 +1,63 @@
+{
+  "name": "deadletter",
+  "version": "0.1.0",
+  "description": "Turn scattered email threads and attachments into structured, browsable, shareable archives.",
+  "private": true,
+  "license": "MIT",
+  "keywords": [
+    "email-archive",
+    "self-hosted",
+    "nextjs",
+    "markdown"
+  ],
+  "homepage": "https://github.com/tannerln7/Deadletter#readme",
+  "bugs": {
+    "url": "https://github.com/tannerln7/Deadletter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tannerln7/Deadletter.git"
+  },
+  "packageManager": "pnpm@11.15.1",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "archive:resource-ids": "node --conditions=react-server --experimental-strip-types scripts/migrate-resource-ids.mts",
+    "shares:db": "node --conditions=react-server --experimental-strip-types scripts/share-db.mts",
+    "validate": "./scripts/validate.sh"
+  },
+  "dependencies": {
+    "@radix-ui/react-alert-dialog": "^1.1.23",
+    "@radix-ui/react-dialog": "^1.1.23",
+    "gray-matter": "^4.0.3",
+    "jose": "^6.2.10",
+    "mime": "^4.1.0",
+    "next": "16.2.12",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "server-only": "^0.0.1",
+    "yaml": "^2.9.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.6",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.12",
+    "jsdom": "^30.0.1",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vitest": "^4.1.10"
+  }
+}

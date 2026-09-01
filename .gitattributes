@@ -1,0 +1,6 @@
+# >>> dev-core text normalization >>>
+* text=auto eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.pdf binary
+# <<< dev-core text normalization <<<

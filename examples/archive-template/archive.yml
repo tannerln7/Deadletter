@@ -1,0 +1,10 @@
+collections:
+  - slug: example-records
+    resourceId: 44444444-4444-4444-8444-444444444444
+    title: Example Records
+    description: Optional virtual organization for the flat example chain.
+    displayOrder: 10
+    categories:
+      - slug: correspondence
+        title: Correspondence
+        displayOrder: 10
