@@ -71,3 +71,7 @@ coverage/
 /*.zip
 *.sqlite
 *.sqlite-*
+
+# Optional local discovery links to the canonical bundled import skill
+/.agents/skills/import-email-export
+/.claude/skills/import-email-export

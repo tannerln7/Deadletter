@@ -127,6 +127,24 @@ describe("archive content format specification", () => {
     expect(development).toContain(
       "[Archive Content Format Specification](docs/archive-content-format.md)",
     );
+    expect(readme).toContain(
+      "[Agent-assisted imports](docs/agent-assisted-imports.md)",
+    );
+    expect(development).toContain(
+      "[Agent-assisted imports](docs/agent-assisted-imports.md)",
+    );
+
+    const importGuide = await readFile(
+      path.resolve("docs/agent-assisted-imports.md"),
+      "utf8",
+    );
+    expect(importGuide).toContain(
+      "[`import-email-export` skill](../.github/skills/import-email-export/SKILL.md)",
+    );
+    expect(importGuide).toContain(
+      "[Archive Content Format Specification](archive-content-format.md)",
+    );
+
     await expect(readFile(specificationPath, "utf8")).resolves.toContain(
       "# Archive Content Format Specification",
     );

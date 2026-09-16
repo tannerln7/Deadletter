@@ -5,6 +5,12 @@ Deadletter is a private, self-hosted Next.js application for reading filesystem-
 Read `README.md` for the public project overview, `docs/archive-content-format.md`
 for the content contract, and `docs/development.md` for canonical commands.
 
+For user-requested import or organization of email exports and attachments,
+follow `.github/skills/import-email-export/SKILL.md` and
+`docs/agent-assisted-imports.md`. Keep source material read-only, process it
+locally by default, preserve evidence when extraction is uncertain, and let the
+format specification, schemas, parsers, and tests decide what content is valid.
+
 ## Architecture invariants
 
 - Use the App Router, React, strict TypeScript, Tailwind CSS, pnpm, and the framework-default Turbopack setup.

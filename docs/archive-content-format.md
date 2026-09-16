@@ -413,6 +413,12 @@ Extra unreferenced files are ignored. An extra non-hidden directory at the archi
 
 ## 14. Conversion workflow from a PDF email export
 
+This section summarizes the conversion contract. The intended operational
+workflow is for a local coding agent to follow the bundled
+[`import-email-export` skill](../.github/skills/import-email-export/SKILL.md).
+See [Agent-assisted imports](agent-assisted-imports.md) for setup, input
+preparation, prompts, review responsibilities, and privacy guidance.
+
 1. Choose a stable valid chain slug using Section 3.
 2. Create `archive-root/<slug>/`, then create `emails/` and the recommended `attachments/` directory.
 3. Create `chain.yml` with the same slug and a descriptive title.
@@ -440,7 +446,9 @@ Conversion guidance for common export artifacts:
 - **OCR/PDF artifacts:** Correct obvious character recognition errors only when the intended text is clear. Preserve meaningful uncertainty and do not silently invent missing content.
 - **Page headers and footers:** Remove repeated PDF page numbers, export timestamps, legal footers, and headers that are not part of the message body.
 
-This workflow is manual guidance, not an importer. The application does not perform PDF extraction, OCR, message splitting, or metadata inference.
+This is a local, agent-guided preparation workflow, not an application
+importer. The running application does not perform PDF extraction, OCR,
+message splitting, metadata inference, or archive writes.
 
 ## 15. Copyable templates
 

@@ -31,6 +31,21 @@ grant authorization. Categories are organizational only and do not have IDs.
 The complete input contract, including validation outcomes and migration
 compatibility, is [Archive Content Format Specification](archive-content-format.md).
 
+## Ingestion boundary
+
+Deadletter reads canonical archive files but does not extract PDFs, connect to
+mailboxes, run OCR as a service, or expose an upload/editing interface. Content
+preparation happens outside the running application. The supported project
+workflow uses a local coding agent with the bundled `import-email-export` skill
+to inspect user-provided exports and attachments, write the filesystem format,
+and validate it before the application reads it.
+
+This keeps uncertain extraction and deduplication decisions visible to the
+user, keeps original source material read-only, and avoids giving the web
+process write access to private archive content. The workflow is documented in
+[Agent-assisted imports](agent-assisted-imports.md); the format specification,
+schemas, and parsers remain authoritative for accepted content.
+
 ## File serving
 
 Archive attachments are never placed in `public/`. The application validates

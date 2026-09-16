@@ -18,4 +18,6 @@ Run commands from the repository root.
 Keep real archives, `.env.local`, production databases, source exports, and
 credentials out of Git. The detailed archive contract is the
 [Archive Content Format Specification](docs/archive-content-format.md); share
-and deployment procedures are documented under `docs/`.
+and deployment procedures are documented under `docs/`. For the intended
+coding-agent ingestion workflow, see
+[Agent-assisted imports](docs/agent-assisted-imports.md).

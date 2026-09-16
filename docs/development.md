@@ -62,8 +62,14 @@ for the request model and [Deployment](deployment.md) for production setup.
 
 Read the [Archive Content Format Specification](archive-content-format.md)
 before creating content. Use `examples/archive-template/` as a parseable,
-fictional reference. The repository-local `import-email-export` skill provides
-an evidence-preserving workflow for importing messy exports.
+fictional reference.
+
+The intended ingestion workflow is local and agent-assisted rather than an
+in-app importer. The canonical `.github/skills/import-email-export/SKILL.md`
+skill tells Codex, Claude Code, or another compatible coding agent how to
+preserve source evidence, split messages, resolve duplicates, match
+attachments, write canonical files, and validate the result. Read
+[Agent-assisted imports](agent-assisted-imports.md) for installation and usage.
 
 ## Working safely
 

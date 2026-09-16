@@ -10,7 +10,9 @@ mail server, CMS, or general-purpose file manager.
 Archive content remains on the server filesystem: one Markdown file per email
 or document, with original attachments kept alongside it. Deadletter validates
 that structure, presents entries as a chronological timeline, and streams files
-through constrained, path-safe routes.
+through constrained, path-safe routes. A bundled coding-agent skill provides
+the intended workflow for turning messy user-supplied exports into that
+canonical structure.
 
 ## Why Deadletter
 
@@ -27,6 +29,8 @@ reviewable, and independent of a database for archive content itself.
 - Responsive timelines with GitHub-flavored Markdown and practical previews.
 - Safe attachment streaming and a focused cross-chain file browser.
 - Request-time filesystem reads so normal content changes appear on refresh.
+- Agent-guided import of PDF, text, and Markdown exports with attachment
+  matching, deduplication, and evidence-preserving cleanup.
 - Light and dark themes.
 - Cloudflare Access verification for private application routes.
 - Revocable, scoped share links for one live chain or collection.
@@ -74,6 +78,49 @@ Keep real correspondence outside Git and out of `public/`.
 
 For detailed local setup, development-origin behavior, test commands, and
 resource-ID tooling, read [Development](docs/development.md).
+
+## Import with a coding agent
+
+Deadletter deliberately has no upload screen or automatic mailbox importer.
+Instead, a local coding agent such as Codex or Claude Code uses the bundled
+[`import-email-export` skill](.github/skills/import-email-export/SKILL.md) to
+inspect exports, reconstruct individual messages, associate original
+attachments, and write validated archive files. The original source material
+stays read-only and local unless you explicitly authorize otherwise.
+
+Install the repository-local discovery link for your agent from the repository
+root. The canonical skill remains under `.github/skills/`; these links do not
+create a second maintained copy.
+
+**Codex**
+
+```bash
+mkdir -p .agents/skills
+ln -s ../../.github/skills/import-email-export .agents/skills/import-email-export
+```
+
+**Claude Code**
+
+```bash
+mkdir -p .claude/skills
+ln -s ../../.github/skills/import-email-export .claude/skills/import-email-export
+```
+
+Start a new agent session if the skill is not discovered immediately. Then ask
+the agent to use `import-email-export` and provide:
+
+- the local path or paths to the email export files;
+- the original attachment files, when available;
+- the desired chain title and whether it is new or existing;
+- the archive root and optional collection/category placement;
+- the source timezone, especially when exported timestamps omit offsets; and
+- whether existing archive entries may be corrected or replaced.
+
+The agent inventories and deduplicates messages, reports unresolved metadata or
+attachment ownership instead of guessing, writes or stages the archive tree,
+and runs the repository's existing validation. You remain responsible for the
+final content review. See [Agent-assisted imports](docs/agent-assisted-imports.md)
+for prompts, preparation, safety rules, and the complete interaction model.
 
 ## Archive content
 
@@ -143,6 +190,7 @@ pnpm validate
 ## Documentation
 
 - [Architecture](docs/architecture.md)
+- [Agent-assisted imports](docs/agent-assisted-imports.md)
 - [Archive content format](docs/archive-content-format.md)
 - [Authentication and sharing](docs/authentication-and-sharing.md)
 - [Deployment](docs/deployment.md)
@@ -163,9 +211,11 @@ share authorization boundaries; deployment must preserve those boundaries.
 ## Status
 
 Deadletter is a self-hosted archive reader with a stable filesystem content
-contract. It intentionally does not provide mail ingestion, upload/edit/delete
-interfaces, full-text search, an archive database, custom Office/PDF rendering,
-or a general document-management feature set.
+contract. It intentionally does not provide automatic mailbox ingestion,
+upload/edit/delete interfaces, full-text search, an archive database, custom
+Office/PDF rendering, or a general document-management feature set. Import is
+an explicit, reviewable local-agent workflow rather than an application
+feature.
 
 ## Contributing
 
