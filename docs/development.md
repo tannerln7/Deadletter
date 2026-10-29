@@ -43,6 +43,14 @@ validation and unit tests do not require a live Access session.
 No separate formatter is configured. `pnpm validate` runs the repository's
 canonical lint, type-check, test, and production-build pass.
 
+## Theme palette
+
+The light and dark palettes live in `app/globals.css`: warm neutral surfaces,
+charcoal text/backgrounds, and orange accents. Primary actions pair `--accent`
+with `--on-accent`; selected controls use `--control-active` and its foreground.
+Warning/error colors remain separate from brand accents. `test/theme-colors.test.ts`
+checks a minimum 4.5:1 contrast for normal text and primary/selected controls.
+
 ## Screenshot example content
 
 The [showcase archive](../examples/showcase/chains) contains six fictional

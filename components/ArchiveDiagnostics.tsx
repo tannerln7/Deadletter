@@ -12,10 +12,10 @@ export default function ArchiveDiagnostics({
   return (
     <aside
       aria-labelledby="archive-warnings-title"
-      className="border-l-2 border-[var(--accent)] bg-[var(--accent-soft)] px-5 py-5"
+      className="border-l-2 border-[var(--warning)] bg-[var(--warning-soft)] px-5 py-5"
     >
       <div className="flex gap-3">
-        <WarningIcon className="mt-0.5 size-5 shrink-0 text-[var(--accent-strong)]" />
+        <WarningIcon className="mt-0.5 size-5 shrink-0 text-[var(--warning)]" />
         <div className="min-w-0">
           <h2 id="archive-warnings-title" className="font-semibold text-[var(--ink)]">
             Some archive content needs attention

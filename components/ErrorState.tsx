@@ -16,9 +16,9 @@ export default function ErrorState({
   title,
 }: ErrorStateProps) {
   return (
-    <div className="border-l-2 border-[var(--accent)] bg-[var(--accent-soft)] px-5 py-6 sm:px-6">
+    <div className="border-l-2 border-[var(--danger)] bg-[var(--danger-soft)] px-5 py-6 sm:px-6">
       <div className="flex gap-3">
-        <WarningIcon className="mt-0.5 size-5 shrink-0 text-[var(--accent-strong)]" />
+        <WarningIcon className="mt-0.5 size-5 shrink-0 text-[var(--danger)]" />
         <div className="min-w-0">
           <h2 className="font-semibold text-[var(--ink)]">{title}</h2>
           <p className="mt-1 text-sm leading-6 text-[var(--muted)]">{description}</p>

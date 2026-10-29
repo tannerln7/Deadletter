@@ -261,7 +261,7 @@ export default function FilePreviewModal({ file, onClose }: FilePreviewModalProp
           </a>
           <a
             href={`${file.url}${file.url.includes("?") ? "&" : "?"}download=1`}
-            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-[var(--accent-strong)] px-4 text-sm font-semibold text-[var(--on-accent)] outline-none hover:bg-[var(--accent-hover)] focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2"
+            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-[var(--accent)] px-4 text-sm font-semibold text-[var(--on-accent)] outline-none hover:bg-[var(--accent-hover)] focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2"
           >
             <DownloadIcon className="size-4" />
             Download
