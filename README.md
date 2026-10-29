@@ -35,6 +35,68 @@ reviewable, and independent of a database for archive content itself.
 - Cloudflare Access verification for private application routes.
 - Revocable, scoped share links for one live chain or collection.
 
+## Showcase
+
+All examples below use [fictional correspondence](examples/showcase/chains),
+not production records. Desktop views adapt to your light or dark theme.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/screenshots/15-overview-dark.png">
+  <img src="docs/screenshots/01-overview-light.png" alt="Deadletter archive overview with collections and email chains">
+</picture>
+
+<details>
+<summary>Explore timelines, attachment previews, file filtering, and mobile layouts</summary>
+
+### Read a conversation in context
+
+Continuous timelines keep message metadata, Markdown bodies, and attachments
+together. Switch between oldest-first and newest-first views.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/screenshots/16-timeline-dark.png">
+  <img src="docs/screenshots/04-timeline-light.png" alt="Email timeline with sender and recipient details, attachments, and chronological sorting">
+</picture>
+
+### Find attachments across conversations
+
+Filter by chain or file type without separating files from their email context.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/screenshots/17-files-dark.png">
+  <img src="docs/screenshots/06-files-light.png" alt="Cross-chain file browser with attachment metadata and filter controls">
+</picture>
+
+### Preview without leaving the archive
+
+Images and Markdown open in an accessible preview surface. PDFs use the
+browser's native viewer; other files retain safe open/download actions.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/screenshots/18-image-preview-dark.png">
+  <img src="docs/screenshots/08-image-preview-light.png" alt="In-app preview of an attached workspace layout image">
+</picture>
+
+![Native browser PDF preview](docs/screenshots/09-pdf-preview-light.png)
+
+### Take it to a smaller screen
+
+Touch-friendly timelines, filters, and previews work in narrow layouts, in
+light and dark mode.
+
+<p>
+  <img src="docs/screenshots/20-mobile-timeline-light.png" width="30%" alt="Mobile email timeline in light mode">
+  <img src="docs/screenshots/21-mobile-files-dark.png" width="30%" alt="Mobile file filters in dark mode">
+  <img src="docs/screenshots/22-mobile-image-preview-dark.png" width="30%" alt="Mobile attachment preview in dark mode">
+</p>
+
+See [Authentication and sharing](docs/authentication-and-sharing.md) for the
+sharing controls and restricted public view, or
+[Agent-assisted imports](docs/agent-assisted-imports.md#review-and-completion)
+for an example of a completed import.
+
+</details>
+
 ## Architecture at a glance
 
 ```text

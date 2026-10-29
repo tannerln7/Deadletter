@@ -24,6 +24,10 @@ revoke share links. Management route handlers additionally require the expected
 private Origin, JSON requests, and a project-specific same-origin request
 header.
 
+Authorized managers explicitly confirm sharing before a public link is created:
+
+![Create-share confirmation for a fictional collection](screenshots/11-share-dialog-light.png)
+
 ## Share links
 
 A share grant targets one immutable chain or collection `resourceId`. A fresh
@@ -54,6 +58,15 @@ Shared pages, exchange responses, and files use `private, no-store` cache
 controls. Cloudflare must also bypass caching for the share hostname. Shared
 navigation uses ordinary links rather than speculative Next.js navigation so
 fresh server requests revalidate the grant.
+
+The public view deliberately omits private navigation and share-management
+controls. This fictional collection exposes only its authorized categories and
+chains:
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="screenshots/26-shared-collection-dark.png">
+  <img src="screenshots/13-shared-collection-light.png" alt="Restricted public collection view with category links and creator attribution">
+</picture>
 
 ## Operations
 

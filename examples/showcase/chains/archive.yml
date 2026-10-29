@@ -1,0 +1,33 @@
+{
+  "collections": [
+    {
+      "slug": "studio-refresh",
+      "resourceId": "d51ce483-2869-402d-bac6-4d8fd5bcf746",
+      "title": "Studio Refresh",
+      "description": "From the first sketch to the final walkthrough. Every decision, document, and detail in one place.",
+      "displayOrder": 10,
+      "categories": [
+        {
+          "slug": "planning",
+          "title": "Planning & Design",
+          "description": "Design conversations, proposals, and decisions before work begins.",
+          "displayOrder": 10
+        },
+        {
+          "slug": "delivery",
+          "title": "Delivery & Handover",
+          "description": "Installation schedules, progress updates, and final records.",
+          "displayOrder": 20
+        }
+      ]
+    },
+    {
+      "slug": "community-workshop",
+      "resourceId": "7d902693-0c46-4dfc-979d-439cdf811dd4",
+      "title": "Community Workshop",
+      "description": "Planning a small neighborhood workshop, one conversation at a time.",
+      "displayOrder": 20,
+      "categories": []
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "screenshots": [
+    {
+      "file": "01-overview-light.png",
+      "description": "Collections and ungrouped conversations",
+      "theme": "light",
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "02-collection-light.png",
+      "description": "A collection organized into categories",
+      "theme": "light",
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "03-category-light.png",
+      "description": "Subject-focused chains inside a category",
+      "theme": "light",
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "04-timeline-light.png",
+      "description": "Newest-first continuous email timeline",
+      "theme": "light",
+      "viewport": {
+        "width": 1440,
+        "height": 1200
+      }
+    },
+    {
+      "file": "05-message-details-light.png",
+      "description": "Message headers, GitHub-flavored Markdown table, and attachments",
+      "theme": "light",
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "06-files-light.png",
+      "description": "Cross-chain attachment browser",
+      "theme": "light",
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "07-files-filtered-light.png",
+      "description": "Image category filter and attachment metadata",
+      "theme": "light",
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "08-image-preview-light.png",
+      "description": "Responsive image preview",
+      "theme": "light",
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "09-pdf-preview-light.png",
+      "description": "Native browser PDF preview",
+      "theme": "light",
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "10-markdown-preview-light.png",
+      "description": "Rendered Markdown attachment preview",
+      "theme": "light",
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "11-share-dialog-light.png",
+      "description": "Explicit live-resource sharing confirmation",
+      "theme": "light",
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "12-sharing-status-light.png",
+      "description": "Active share with regeneration and revocation controls",
+      "theme": "light",
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "13-shared-collection-light.png",
+      "description": "Restricted public collection with creator attribution",
+      "theme": "light",
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "14-shared-timeline-light.png",
+      "description": "Restricted public chain without private navigation",
+      "theme": "light",
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "15-overview-dark.png",
+      "description": "Dark-mode archive overview",
+      "theme": "dark",
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "16-timeline-dark.png",
+      "description": "Dark-mode email timeline",
+      "theme": "dark",
+      "viewport": {
+        "width": 1440,
+        "height": 1200
+      }
+    },
+    {
+      "file": "17-files-dark.png",
+      "description": "Dark-mode file browser",
+      "theme": "dark",
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "18-image-preview-dark.png",
+      "description": "Dark-mode image preview",
+      "theme": "dark",
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "19-markdown-preview-dark.png",
+      "description": "Dark-mode Markdown preview",
+      "theme": "dark",
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "20-mobile-timeline-light.png",
+      "description": "Touch-friendly chain timeline at 390px",
+      "theme": "light",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "file": "21-mobile-files-dark.png",
+      "description": "Mobile dark-mode file filtering",
+      "theme": "dark",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "file": "22-mobile-image-preview-dark.png",
+      "description": "Mobile dark-mode image preview",
+      "theme": "dark",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "file": "23-mobile-overview-dark.png",
+      "description": "Mobile dark-mode collection overview",
+      "theme": "dark",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "file": "24-chain-and-type-filters-light.png",
+      "description": "Chain and file-category filters used together",
+      "theme": "light",
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "25-text-preview-light.png",
+      "description": "Readable plain-text attachment preview",
+      "theme": "light",
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      }
+    },
+    {
+      "file": "26-shared-collection-dark.png",
+      "description": "Dark-mode public collection and attribution",
+      "theme": "dark",
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      }
+    }
+  ],
+  "issues": []
+}

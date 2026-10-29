@@ -31,6 +31,10 @@ grant authorization. Categories are organizational only and do not have IDs.
 The complete input contract, including validation outcomes and migration
 compatibility, is [Archive Content Format Specification](archive-content-format.md).
 
+In the UI, categories organize chains without changing their filesystem paths:
+
+![A collection organized into categories](screenshots/02-collection-light.png)
+
 ## Ingestion boundary
 
 Deadletter reads canonical archive files but does not extract PDFs, connect to
@@ -67,6 +71,13 @@ continuous-scroll timeline. The file browser aggregates referenced attachments
 across the private archive. PDF, common images, plain text, and Markdown have
 practical browser-native previews; risky or unsupported formats use a safe
 download/open fallback.
+
+Markdown attachments reuse the same readable formatting as email bodies:
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="screenshots/19-markdown-preview-dark.png">
+  <img src="screenshots/10-markdown-preview-light.png" alt="Markdown attachment preview with headings, lists, a table, and a blockquote">
+</picture>
 
 ## Boundaries
 

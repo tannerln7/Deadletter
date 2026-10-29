@@ -159,6 +159,11 @@ The user performs the final content review. Check that:
 - no extraction artifacts, temporary files, sources, or private records were
   placed in Git or `public/`.
 
+A completed import keeps recipients, CC, subject, formatted body, and original
+attachments together. This example is entirely fictional:
+
+![Imported message with CC, a Markdown table, and two attachments](screenshots/05-message-details-light.png)
+
 Normal archive additions appear after refreshing Deadletter and do not require
 a rebuild. Code, dependency, schema, or deployment changes follow the separate
 development and deployment procedures.

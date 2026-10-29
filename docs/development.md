@@ -43,6 +43,34 @@ validation and unit tests do not require a live Access session.
 No separate formatter is configured. `pnpm validate` runs the repository's
 canonical lint, type-check, test, and production-build pass.
 
+## Screenshot example content
+
+The [showcase archive](../examples/showcase/chains) contains six fictional
+chains, fourteen messages, and nine synthetic PDF, PNG, Markdown, and text
+attachments. Two collections demonstrate categories and ungrouped chains.
+All participant addresses use `.example.test` domains.
+
+To select it in a separately configured development instance, set:
+
+```dotenv
+ARCHIVE_DATA_DIR=examples/showcase/chains
+```
+
+This changes content only; authentication and private/share host checks still
+apply. Do not repoint production at example data to capture screenshots.
+
+The [README showcase](../README.md#showcase) and illustrations in these docs
+were captured against an isolated production build using local test identity
+keys and a throwaway share database. No credentials or production records are
+included. The temporary deployment is not a publicly hosted demo.
+
+The [capture manifest](screenshots/capture-manifest.json) lists the available
+images, themes, viewports, and diagnostic results. Desktop captures use
+1440 × 1050 CSS pixels (1440 × 1200 for timelines); overview images include the
+full page. Mobile captures use 390 × 844 CSS pixels with touch emulation and a
+2× pixel ratio. These are Chromium screenshots, not physical-device Safari
+testing. The PDF toolbar is supplied by the browser and may vary elsewhere.
+
 ## Local origins and request-time content
 
 `next dev` restricts development scripts, fonts, and HMR endpoints to known
